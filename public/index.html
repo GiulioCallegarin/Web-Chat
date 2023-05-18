@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chat</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+	<div class="chat">
+		<input id='imageInput' type="file" multiple="multiple" accept="image/jpeg, image/png, image/jpg">
+		<ul id="chatUl">
+		</ul>
+	</div>
+	<form id="inputForm">
+		<textarea id="text" placeholder="Enter text"></textarea>
+		<button id="send">Send</button>
+	</form>
+</body>
+<script src="./js/vars.js"></script>
+<script src="./js/transmitter.js"></script>
+<script src="./js/reciver.js"></script>
+</html>
